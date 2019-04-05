@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Monsieur+La+Doulaise" />
+</head>
+<body>
+<div id="spinner" style="display: none"></div>
+<div>
+    <h2>Library</h2>
+    <button id="addButton" class="button">Add Book</button>
+    <button id="showButton" class="button">Show Books</button>
+    <table id="input">
+        <tr>
+            <td><input id="add-title" placeholder="  enter Title *"></td>
+            <td><input id="add-author" placeholder="  enter Author *"></td>
+            <td><input id="add-number" placeholder="  enter ISBN"></td>
+            <td class="editBtn">
+                <button id="cancelAdd" class="editing">Cancel</button>
+            </td>
+            <td class="editBtn">
+                <button id="commitBook" class="edit">Commit</button>
+            </td>
+        </tr>
+    </table>
+    <table id="book-list"></table>
+</div>
+<script src="script.js"></script>
+<script> attachEvents() </script>
+</body>
+</html>
+

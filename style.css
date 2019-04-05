@@ -1,0 +1,261 @@
+h2 {
+    font-family: "Monsieur La Doulaise";
+    font-size: 100px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26px;
+    color: #0099CC;
+    margin: 80px 20px;
+}
+
+div {
+
+    margin: 15px;
+}
+
+input {
+    display: inline-grid;
+    height: 20px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 4px 0px;
+    font-size: 14px;
+    font-family: Arial;
+    outline: none;
+}
+
+table {
+    display: none;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial;
+}
+
+
+th, td {
+    height: 40px;
+    width: 200px;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th:nth-child(4),
+th:nth-child(5),
+td:nth-child(4),
+td:nth-child(5) {
+    height: 40px;
+    width: 90px;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.button {
+    transition: all 0.5s ease;
+    margin: 4px 0px;
+    position: relative;
+    background-color: #0099CC;
+    border: none;
+    font-size: 19px;
+    color: #FFFFFF;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+    font-family: Arial;
+}
+
+.adding, .hide {
+    transition: all 0.5s ease;
+    margin: 4px 0px;
+    position: relative;
+    background-color: #FFFFFF;
+    border: solid #0099CC 2px;
+    font-size: 19px;
+    color: #0099CC;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+    font-family: Arial;
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #0099CC;
+    border: solid #0099CC 2px;
+}
+
+#commitBook, #commit {
+    transition: all 0.5s ease;
+    margin: 4px 0px;
+    position: relative;
+    background-color: #38a653;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+    font-family: Arial;
+}
+
+#commitBook:hover, #commit:hover {
+    background-color: #FFFFFF;
+    color: #38a653;
+    border: solid #38a653 2px;
+}
+
+#delete {
+    transition: all 0.5s ease;
+    margin: 4px 0px;
+    position: relative;
+    background-color: #a11922;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+    font-family: Arial;
+}
+
+#delete:hover {
+    background-color: #FFFFFF;
+    color: #a11922;
+    border: solid #a11922 2px;
+}
+
+.edit {
+    transition: all 0.5s ease;
+    margin: 4px 0px;
+    position: relative;
+    background-color: #0099CC;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+    font-family: Arial;
+}
+
+.edit:hover {
+    background-color: #FFFFFF;
+    color: #0099CC;
+    border: solid #0099CC 2px;
+}
+
+.editing {
+    transition: all 0.5s ease;
+    margin: 4px 0px;
+    position: relative;
+    background-color: #FFFFFF;
+    border: solid #0099CC 2px;
+    font-size: 12px;
+    color: #0099CC;
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+    font-family: Arial;
+}
+
+#spinner {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 9999;
+    display: none;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#spinner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: black;
+    border-top-color: transparent;
+    border-width: 4px;
+    border-radius: 50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+}
+
+
+
+
