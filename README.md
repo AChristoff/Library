@@ -1,3 +1,2 @@
-- A simple REST API, to exercise asynchronous programming.
-- It is build with jQuery's AJAX and Kinvey as DB
+- Basic App using CSS, HTML, JS, jQuery's AJAX & Kinvey REST API
 - Feel free to try it ⮞ https://achristoff.github.io/Library ⮜
